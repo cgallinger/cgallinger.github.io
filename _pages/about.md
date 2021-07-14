@@ -3,6 +3,10 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hi! I’m Cailin.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I'm a first-year geophysics PhD student at the [University of Western Ontario](https://www.uwo.ca/earth/), being supervised by [Dr. Catherine Neish](https://planetneish.ca/). My main area of study is understanding the physical properties of lunar impact crater ejecta, using data from the [Diviner Lunar Radiometer](https://www.diviner.ucla.edu/) and the [Mini-RF instrument](https://www.nasa.gov/mission_pages/Mini-RF/main/), both of which are onboard the [Lunar Reconnaissance Orbiter](https://lunar.gsfc.nasa.gov/).
+
+You can read my CV [here](https://cgallinger.github.io/404)
+
+I'm also on [twitter](https://www.twitter.com/europamilkshake) and [medium](https://cailingallinger.medium.com/).
