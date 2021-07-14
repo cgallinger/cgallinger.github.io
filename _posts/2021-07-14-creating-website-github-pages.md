@@ -8,7 +8,7 @@ tags:
   - github
 ---
 
-I’ve finally started migrating my writing from Medium over to here, in order to have a centralized platform with all of my professional work in one place. Having used GitHub Pages to create a website for our lab group when I was at UofT, I figured it would be a good and familiar place for me to start, as well as integrating well with my goal of maintaining any code I use for research in publicly-available GitHub repositories. If it worked once, how hard could it be to work again, right?
+I’ve finally started migrating my writing from Medium over to here, in order to have a centralized platform with all of my professional work in one place. Having used GitHub Pages to [create a website for our lab group when I was at UofT](https://uoftssxg.github.io/), I figured it would be a good and familiar place for me to start, as well as integrating well with my goal of maintaining any code I use for research in publicly-available GitHub repositories. If it worked once, how hard could it be to work again, right?
 
 Boy, did I somehow erase any memory of how wrong that was.
 
