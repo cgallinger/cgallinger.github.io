@@ -15,15 +15,24 @@ Turning your whole life upside down, packing it into boxes, unpacking, and setti
 
 ![facebook post that reads: "like i know realistically this is going to continue to be my life for the foreseeable future but my god am i sick of looking for housing/moving every ~2 years", followed by several replies from people who've had it much worse than me. sigh.]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/moving.png)
 
+Despite the stress, I'm pretty happy with the place I landed in. I managed to find an apartment in just two weeks, and got the place locked in---sight unseen!---before the end of July. I rented Frog Boxes for moving, which are a great option for an environmentally-friendly and convenient packing solution. Finally, with a ton of help from my family, we heaved all of the stuff into 3(!!!) vehicles, and dumped it all into this place:
+
+![]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/new_apartment.jpg)
+
 My previous room had been an oasis through some of the roughest times in my life. I'd fallen in love with my current partner there, retreated to it after long days in customer service with cis people, and weathered the beginning of the pandemic in it. I've done almost all of the work that will form my first paper from this desk, captured most eloquently by my partner late one night as I was working on both electronics and programming stuff: 
 
 ![picture of me working at my desk in my millenial-pink room, surrounded by the objects that best capture who I am]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/room_working.jpg)
 
-Finally, I've got to end with the best thing I've seen in London so far---my partner and I are absolutely _obsessed_, and when indoor dining is a thing again you _know_ we'll be giving you a full review of this place: 
+Here's the final view before we left. I'm gonna miss you, little pink womb:
+
+![picture of me working at my desk in my millenial-pink room, surrounded by the objects that best capture who I am]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/room_last_2.jpg)
+
+Finally, I've got to end with the best thing I've seen in London so far. My partner and I are absolutely _obsessed_, and when indoor dining is a thing again you _know_ we'll be giving you a full review of this place: 
 
 ![]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/spageddy_eddys.jpg)
 
 Okay, I've still got to prepare for a presentation tomorrow, get my apartment set up, and get ready for my first courses starting next Monday, so that's all for now!
 
 till next time,
+
 -xoxo gosssip grad
