@@ -5,18 +5,25 @@ published: true
 categories:
   - blog
 tags:
-  - 
+  - london
   - gradschool
 ---
 
-Gonna be a short one today in all honesty, and the title may give you some clue as to why (no, not 'cause Billy's only 5' 5"). As of this past weekend, I'm officially a Londoner! Unfortunately, I've had to specify to my more worldly friends that I mean the southern Ontario town, but it's been pretty nice here so far. Within a few days of moving, I've taken the bus around town, visited some of the vintage stores in the area, explored the park outside my apartment (although not yet the river!), and gotten takeout at more places than I dare to name.
+Gonna be a short one today in all honesty, and the title may give you some clue why (no, not 'cause Billy's only 5' 5"). As of this past weekend, I'm officially a Londoner! Unfortunately, I've had to specify to my more worldly friends that I mean the southern Ontario town, but it's been pretty nice here so far. Within a few days of moving, I've taken the bus around town, visited some of the vintage stores in the area, explored the park outside my apartment (although not yet the river!), and gotten takeout at more places than I dare to name.
 
-Turning your whole life upside down, packing it into boxes, unpacking, and setting it all up again has been a lot more stressful than I anticipated, and I already knew it was going to be stressful. Since I was 18 I moved almost every single year, until the last place I lived in - there, I got a blissful 3-year reprieve, and was just starting to feel like I'd made myself a home. To be honest, if the responses to this post I made on facebook are any indication, I've actually been pretty lucky as far as unstable apartment-hopping queers go:
+Turning your whole life upside down, packing it into boxes, unpacking, and setting it all up again has been a lot more stressful than I anticipated, and I already _knew_ it was going to be stressful. Since I was 18 I moved almost every single year, until the last place I lived in---there, I got a blissful 3-year reprieve, and was just starting to feel like I'd made myself a home. To be honest, if the responses to this post I made on facebook are any indication, I've actually been pretty lucky as far as unstable, apartment-hopping queers go:
 
-![facebook post]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/moving.png)
+![facebook post that reads: "like i know realistically this is going to continue to be my life for the foreseeable future but my god am i sick of looking for housing/moving every ~2 years", followed by several replies from people who've had it much worse than me. sigh.]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/moving.png)
 
+My previous room had been an oasis through some of the roughest times in my life. I'd fallen in love with my current partner there, retreated to it after long days in customer service with cis people, and weathered the beginning of the pandemic in it. I've done almost all of the work that will form my first paper from this desk, captured most eloquently by my partner late one night as I was working on both electronics and programming stuff: 
 
+![picture of me working at my desk in my millenial-pink room, surrounded by the objects that best capture who I am]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/room_working.jpg)
 
+Finally, I've got to end with the best thing I've seen in London so far---my partner and I are absolutely _obsessed_, and when indoor dining is a thing again you _know_ we'll be giving you a full review of this place: 
 
+![]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/spageddy_eddys.jpg)
 
+Okay, I've still got to prepare for a presentation tomorrow, get my apartment set up, and get ready for my first courses starting next Monday, so that's all for now!
 
+till next time,
+-xoxo gosssip grad
