@@ -15,7 +15,7 @@ Turning your whole life upside down, packing it into boxes, unpacking, and setti
 
 ![facebook post that reads: "like i know realistically this is going to continue to be my life for the foreseeable future but my god am i sick of looking for housing/moving every ~2 years", followed by several replies from people who've had it much worse than me. sigh.]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/moving.png)
 
-Despite the stress, I'm pretty happy with the place I landed in. I managed to find an apartment in just two weeks, and got the place locked in---sight unseen!---before the end of July. I rented Frog Boxes for moving, which are a great option for an environmentally-friendly and convenient packing solution. Finally, with a ton of help from my family, we heaved all of the stuff into 3(!!!) vehicles, and dumped it all into this place:
+Despite the stress, I'm pretty happy with the place I landed in. I managed to find an apartment in just two weeks, and got the place locked in---sight unseen!---before the end of July. I rented [Frog Boxes](https://www.frogbox.com/) for moving, which are a great option for an environmentally-friendly and convenient packing solution. Finally, with a ton of help from my family, we heaved all of the stuff into 3(!!!) vehicles, and dumped it all into this place:
 
 ![]({{ cgallinger.github.io }}{{ cgallinger.github.io }}/assets/images/new_apartment.jpg)
 
