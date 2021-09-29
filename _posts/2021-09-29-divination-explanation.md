@@ -45,7 +45,7 @@ This was first put to use when Diviner was able to measure the thermal glow of t
 
 This pointing capability, however, has also proven to be somewhat of a woe: last summer, it was discovered that Diviner was suffering from a very small but significant pointing anomaly, which meant that observations of sub-pixel thermally-bright targets were not able to be co-registered. After measuring the offsets between the expected and measured positions of a large number of these targets across the Moon, the team was able to come up with a temporary fix that has significantly improved our data quality:
 
-{% include figure image_path="/assets/images/McCleese2007-fig1.png" alt="Comparison of Diviner channel 6 data on a fresh impact crater, before and after applying a preliminary correction to account for the pointing errors." caption="Ah, that's where I left my glasses!" %}
+{% include figure image_path="/assets/images/diviner_offset_correction.png" alt="Comparison of Diviner channel 6 data on a fresh impact crater, before and after applying a preliminary correction to account for the pointing errors." caption="Ah, that's where I left my glasses!" %}
 
 The difference is remarkable, like putting a pair of well-tuned spectacles on our old WALL-E-shaped friend. The consequences of this fix will also be extremely significant for processing of Diviner data by other researchers, including those diving into the massive archive of data from it long after the mission has finally ended.
 
