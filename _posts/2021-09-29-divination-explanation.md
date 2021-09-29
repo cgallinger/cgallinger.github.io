@@ -54,6 +54,7 @@ So that’s the story of how the little thermal scanning robot that could came t
 Next time we dive back into research land again: an overview of how to process Diviner data to get all of the wonderful products that people have been able to derive from it, as well as a few dives into the specific ways I’ve been working with it to contribute to the overall science team productivity.
 
 till then,
+
 -xoxo gossip grad
 
 
