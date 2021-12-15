@@ -15,6 +15,8 @@ However, at some point in the mere two weeks between the end of this ride and th
 
 It may or may not surprise you to know that I was, of course, a huge band nerd throughout most of elementary and high school. The first instrument I learned was that [most infamous butt of all orchestral jokes](https://www.mit.edu/~jcb/viola-jokes.html), the viola, mainly because I was too asthmatic to play one of the cool wind instruments when we started music in grade 4. (Did I mention the nerd part?)
 
+{% include figure image_path="/assets/images/viola_joke.jpg" caption="Har har har." %}
+
 The state of funding for music education being what it was, I was lucky to be able to play as long as I did, but by high school my beloved little screechy firelog days were numbered as there was no string orchestra program. Thankfully, seeing the writing on the wall, I'd already started learning a new instrument by the end of middle school (8th grade for you Americans): the keyboard!
 
 My mom had received a 90's Casio junker from my older cousin's failed attempt at taking piano lessons, and when it made its way into my hands I found a whole new musical world waiting for me to explore. The keys were yellowed and clicky, the buttons stuck and the labels were worn off of some of the features, but it could make sounds and gave me a visual route into truly understanding music theory for the first time. I wasn't taking lessons, but I did have a friend who was into music who I eventually performed in a band with, so I had ample opportunity and motivation to practice.
