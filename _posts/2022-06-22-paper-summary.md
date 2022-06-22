@@ -43,6 +43,7 @@ Over 40 years after this paper was published, and almost 50 years since the Surv
 To date, no other landed spacecraft other than the Surveyors has directly measured this elusive and mysterious phenomenon, but this experimental evidence (and the model that explains it) adds significant weight to the resolution proposed by Rennilson and Criswell half a century ago. In a few years time, as robotic and human-crewed spacecraft equipped with far more advanced sensors are sent to continue humanity’s exploration of our planetary sibling, Rennilson told me he hopes he will finally get to witness the confirmation of decades of his persistent, meticulous, and pioneering work.
 
 Till next time!
+
 -xoxo gossip grad
 
 
