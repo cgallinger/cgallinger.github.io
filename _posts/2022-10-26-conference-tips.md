@@ -1,5 +1,5 @@
 ---
-title: "Contemplating conference conferrals"
+title: "Contemplating conference considerations"
 date: 2022-10-26T09:00:00-04:00
 published: true
 categories:
