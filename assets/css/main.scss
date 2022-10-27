@@ -8,6 +8,16 @@
 //@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Selected elements */
+::-moz-selection { color: #fff; background: #FF33AB; }
+
+::selection { color: #fff; background: #FF33AB; }
+
+/* Links */
+a { color: #26a492; }
+a:visited { color: #26a492; }  /* #4e91a5 */
+a:hover { color: #008073; outline: 0; } /* #235e70 */
+
 /* the reference tooltips style starts here */
 
 .ref {
