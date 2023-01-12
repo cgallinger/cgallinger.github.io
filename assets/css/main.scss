@@ -1,22 +1,68 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
+search: false
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/default"; // skin
-//@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+/* Theme variable overrides (need to be before theme import) */
+/* e.g.: $link-color: red; */
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin 
 @import "minimal-mistakes"; // main partials
+
+
+/* Custom CSS (needs to come after import) */
 
 /* Selected elements */
 ::-moz-selection { color: #fff; background: #FF33AB; }
-
 ::selection { color: #fff; background: #FF33AB; }
 
 /* Links */
-a { color: #26a492; }
-a:visited { color: #26a492; }  /* #4e91a5 */
-a:hover { color: #008073; outline: 0; } /* #235e70 */
+/* the nice green colour: #26a492 and the dark version: #008073 */
+a { color: #3dcbb6; }
+a:visited { color: #3dcbb6; }  /* #4e91a5 */
+a:hover { color: #00ab9a; outline: 0; } /* #235e70 */
+
+/* Text hover translation */
+.hover_translate{
+    display: inline-block;    
+}
+
+.hover_translate {
+    /* color: rgba(0, 0, 0, 0); */
+    width: auto;
+    height: auto;
+    position: relative;
+    color: #FF33AB;
+    font-weight: bold;
+}
+.hover_translate:before {
+    content: attr(text-repl);
+    width: 100%;
+    color: #FF33AB;
+    font-weight: bold;
+    background: $background-color;
+    position: absolute;
+    opacity: 0;
+}
+
+.hover_translate:hover:before, .hover_translate:before {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.hover_translate:hover:before {
+    color: #FF33AB;
+    font-weight: bold;
+    background: $background-color;
+    opacity: 1;
+}
+
 
 /* the reference tooltips style starts here */
 
@@ -30,7 +76,7 @@ a:hover { color: #008073; outline: 0; } /* #235e70 */
     left: 2px;
     bottom: 1ex;
     /*font-family: Verdana, sans-serif;*/
-    color: #26a492;
+    color: #3dcbb6;
     font-size: .7em;
     font-weight: bold;
     text-decoration: underline;
@@ -48,8 +94,12 @@ a:hover { color: #008073; outline: 0; } /* #235e70 */
     bottom: 5px ;
     border: 1px solid;
     padding: 5px;
-    background-color: #fff;
+    background-color: $background-color;
     word-wrap: break-word;
     z-index: 9999;
     overflow: auto;
+}
+
+.foo {
+    display: block;
 }
