@@ -6,7 +6,7 @@ main:
     url: /posts/
   - title: "Tags"
     url: /tags/
-  - title: "Misc"
-    url: /misc/
+  # - title: "Misc"
+  #   url: /misc/
   # - title: "Sitemap"
   #   url: /sitemap/

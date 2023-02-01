@@ -294,6 +294,12 @@ defaults:
       share: true
       related: true
 
+# Pages collection:
+collections:
+   pages:
+     output: true
+     permalink: /:path/
+
 algolia:
   files_to_exclude:
     - _posts/2023-01-07-prayer-for-computing.md

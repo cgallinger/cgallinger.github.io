@@ -14,6 +14,23 @@ search: false
 
 /* Custom CSS (needs to come after import) */
 
+/* Font size stuff */
+html {
+    font-size: 12px; // change to whatever
+  
+    @include breakpoint($medium) {
+      font-size: 14px; // change to whatever
+    }
+  
+    @include breakpoint($large) {
+      font-size: 16px; // change to whatever
+    }
+  
+    @include breakpoint($x-large) {
+      font-size: 18px; // change to whatever
+    }
+}
+
 /* Selected elements */
 ::-moz-selection { color: #fff; background: #FF33AB; }
 ::selection { color: #fff; background: #FF33AB; }

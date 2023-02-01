@@ -12,7 +12,7 @@ read_time: false
 comments: false
 share: false
 related: false
-show_date: false
+show_date: true
 search: false
 classes: wide
 ---
