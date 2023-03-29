@@ -121,6 +121,7 @@ blockquote {
       padding-right: 5px;
     }
   }
+
 }
 
 /* links */
@@ -189,23 +190,27 @@ li ol {
 
 figure {
   display: -webkit-box;
-  display: flex;
+  display: block;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 0 auto;
 
   img,
   iframe,
   .fluid-width-video-wrapper {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   img {
-    width: 100%;
-    border-radius: $border-radius;
+    width: auto;
+    max-height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-radius: $border-radius; */
     -webkit-transition: $global-transition;
     transition: $global-transition;
   }
@@ -244,10 +249,13 @@ figure {
 /* Figure captions */
 
 figcaption {
+  margin: 0 auto;
   margin-bottom: 0.5em;
   color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
+  text-align: center;
+  margin-bottom: 1.5em;
 
   a {
     -webkit-transition: $global-transition;

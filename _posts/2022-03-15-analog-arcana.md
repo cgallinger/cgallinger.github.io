@@ -13,7 +13,7 @@ As I discussed in a [previous post](https://cgallinger.github.io/blog/BEAM-me-up
 
 So imagine my surprise when I stumbled across this video recently:
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/MViVyocQhVw" frameborder="0"> </iframe>
+<p align="center"><iframe width="480" height="360" src="https://www.youtube.com/embed/MViVyocQhVw" frameborder="0"></iframe></p>
 
 This is from a 2011 (!!!) talk by Michael Scarito at DEFCON, a hacker convention held annually in Las Vegas, Nevada. Scarito goes through a brief rundown of the principles of radar and what it can be used for, before delving into a project ([originally spearheaded by Dr. Greg Charvat of MIT]((https://ieeexplore.ieee.org/document/6212126))) to build a handheld-sized radar system using off-the-shelf components and a couple of coffee cans (no, seriously). We'll come back to this near the end, since I think it illuminates a number of rather complex elements of a typical radar system, but first: a narcissistic detour!<span class="ref"><span class="refnum">[2]</span><span class="refbody">Listen, I have to keep _something_ about this blog gay.</span></span>
 

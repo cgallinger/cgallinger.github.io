@@ -83,8 +83,12 @@ body {
 }
 
 .page__lead {
+  margin-top: 0.2em;
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-5;
+  font-style: italic;
+  color: #AAAAAA;
+
 }
 
 .page__content {
