@@ -48,8 +48,4 @@ Under the Obama administration, the scope of the NLSI was broadened to encompass
 
 There are many strange quirks of government-operated agencies, and NASA is no exception to this. One of the most confusing is that, despite the common emphasis on "NASA discovers this" and "NASA scientist says that" and "NASA sends astronaut to ISS" etc., these tasks are actually carried out by sections of the agency that largely have almost nothing to do with each other. The primary one that most people are probably familiar with in terms of the probes and landers launched to other planets, the satellites that monitor the Earth, and the space telescopes that peer out deep into the cosmos is the [Science Mission Directorate (SMD)](https://science.nasa.gov/), which oversees all . However, there are actually four other Mission Directorates under NASA's purview: [Aeronautics Research](https://www.nasa.gov/aeroresearch), [Space Technology](http://www.nasa.gov/directorates/spacetech/home/index.html), [Space Operations](https://www.nasa.gov/directorates/space-operations-mission-directorate), and [Exploration Systems Development](https://www.nasa.gov/directorates/exploration-systems-development). It was the intention of the NLSF and, later, the SSERVI ESF to bridge the gap between Science and Exploration, in order to leverage the full advantage of the decades of multi-institutional scientific analysis of the Moon to help set the stage for where and how to send humans to explore it.
 
-<span class="ref"><span class="refnum">[1]</span><span class="refbody">Oh god, has it really been two years??</span></span> 
-
-
-<p align="center"><iframe width="480" height="360" src="https://www.youtube.com/watch?v=ssHkMWcGat4" frameborder="0"></iframe></p>
 
