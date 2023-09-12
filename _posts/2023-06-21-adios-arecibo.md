@@ -1,6 +1,6 @@
 ---
 title: "Adiós, Arecibo"
-excerpt: "How I mourned and celebrated a scientific giant of my childhood"
+excerpt: "Mourning and celebrating a scientific giant of my childhood"
 date: 2023-06-21T09:00:00-04:00
 published: true
 related: false

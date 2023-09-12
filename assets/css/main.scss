@@ -23,11 +23,11 @@ html {
     }
   
     @include breakpoint($large) {
-      font-size: 16px; // change to whatever
+      font-size: 20px; // change to whatever
     }
   
     @include breakpoint($x-large) {
-      font-size: 18px; // change to whatever
+      font-size: 22px; // change to whatever
     }
 }
 
@@ -83,7 +83,7 @@ a:hover { color: #00ab9a; outline: 0; } /* #235e70 */
 
 /* text emphasis on key sections of posts */
 .emphasis{
-    color: #FF33AB;; 
+    color: #FF33AB; 
 }
 
 /* the reference tooltips style starts here */
