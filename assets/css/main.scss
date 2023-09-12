@@ -16,19 +16,22 @@ search: false
 
 /* Font size stuff */
 html {
-    font-size: 0.6em; // change to whatever
-  
+    font-size: 16px;
+
     @include breakpoint($medium) {
-      font-size: 0.8em; // change to whatever
+        font-size: 18px;
     }
-  
+
     @include breakpoint($large) {
-      font-size: 1em; // change to whatever
+        font-size: 20px;
     }
-  
+
     @include breakpoint($x-large) {
-      font-size: 1.2em; // change to whatever
+        font-size: 22px;
     }
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 /* Selected elements */
