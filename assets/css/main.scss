@@ -16,18 +16,18 @@ search: false
 
 /* Font size stuff */
 html {
-    font-size: 12px; // change to whatever
+    font-size: 0.6em; // change to whatever
   
     @include breakpoint($medium) {
-      font-size: 14px; // change to whatever
+      font-size: 0.8em; // change to whatever
     }
   
     @include breakpoint($large) {
-      font-size: 20px; // change to whatever
+      font-size: 1em; // change to whatever
     }
   
     @include breakpoint($x-large) {
-      font-size: 22px; // change to whatever
+      font-size: 1.2em; // change to whatever
     }
 }
 
