@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 ---
 
-{% include figure image_path="/assets/images/23-08-09/scotese2002-adapted-co2coalition-blog.jpg" alt="Profile image of Cailin. She has long blonde hair in a ponytail, and is wearing overalls with various space- and science-related pins on them. Behind her are several of her favourite knick-knacks, including rocks, posters, and spacecraft models." caption=""%}
+{% include figure image_path="/assets/images/about_profile_image.jpg" alt="Profile image of Cailin. She has long blonde hair in a ponytail, and is wearing overalls with various space- and science-related pins on them. Behind her are several of her favourite knick-knacks, including rocks, posters, and spacecraft models." caption=""%}
 
 Hi! I’m Cailin.
 
