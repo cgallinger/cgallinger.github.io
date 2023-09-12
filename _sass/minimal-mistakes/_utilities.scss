@@ -190,6 +190,13 @@ body:hover .visually-hidden button {
   width: 75%
 }
 
+/* adjust image size in ref box */
+.imgref img {
+  min-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
 /* file page content container */
 
 .full {

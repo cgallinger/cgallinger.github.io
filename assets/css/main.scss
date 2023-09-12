@@ -13,26 +13,34 @@ search: false
 
 
 /* Custom CSS (needs to come after import) */
+* { box-sizing: border-box; }
 
 /* Font size stuff */
 html {
-    font-size: 16px;
+    /* apply a natural box layout model to all elements */
+    box-sizing: border-box;
+    background-color: $background-color;
+    font-size: 14px;
 
     @include breakpoint($medium) {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     @include breakpoint($large) {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     @include breakpoint($x-large) {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+
+/* Remove margin */
+
+body { margin: 0; }
 
 /* Selected elements */
 ::-moz-selection { color: #fff; background: #FF33AB; }
@@ -102,7 +110,7 @@ a:hover { color: #00ab9a; outline: 0; } /* #235e70 */
     bottom: 1ex;
     /*font-family: Verdana, sans-serif;*/
     color: #3dcbb6;
-    font-size: .7em;
+    font-size: $type-size-6; /* .7em originally */
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
@@ -110,10 +118,10 @@ a:hover { color: #00ab9a; outline: 0; } /* #235e70 */
 
 .refbody {
     /*font-family: Verdana, sans-serif;*/
-    font-size: .7em;
+    font-size: $type-size-6;
     line-height: 1.1;
     display: block;
-    min-width: 20em;
+    min-width: 20em; /* 20 em originally */
     position: absolute;
     left: 25px;
     bottom: 5px ;
