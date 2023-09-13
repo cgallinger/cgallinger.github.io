@@ -3,7 +3,8 @@ title: "Intersectional Introspection"
 subtitle: "Reconciling past privilege and present pain"
 excerpt: "Reconciling past privilege and present pain"
 date: 2023-03-29T07:00:00-04:00
-published: false
+published: true
+hidden: true
 related: false
 comments: true
 categories:
