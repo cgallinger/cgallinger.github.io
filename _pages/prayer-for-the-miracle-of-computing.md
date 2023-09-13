@@ -1,10 +1,6 @@
 ---
 layout: single
 title: "Prayer for the Miracle of Computing"
-published: true
-tags:
-  - misc
-  - brachot
 canonical_url: "https://cgallinger.github.io/prayer-for-the-miracle-of-computing"
 hidden: true
 author_profile: false
