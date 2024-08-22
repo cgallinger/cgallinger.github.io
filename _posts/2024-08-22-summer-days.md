@@ -24,8 +24,13 @@ May was a pretty chaotic start, featuring lots of travel back and forth to Toron
 
 ## Encampment:
 
+<a href="/assets/images/24-08-22/signal-2024-06-13-20-06-22-825.jpg">
+![image-center](/assets/images/24-08-22/signal-2024-06-13-20-06-22-825.jpg){: .align-center .width-threequarter}</a>
+<figcaption>The sky smiling down on our little community during Pride month 🌈🇵🇸✨</figcaption>
 
-{% include figure image_path="/assets/images/24-08-22/signal-2024-06-13-20-06-22-825.jpg" alt="" caption="" %}
+<a href="/assets/images/24-08-22/20240524_173116.jpg">
+![image-center](/assets/images/24-08-22/20240524_173116.jpg){: .align-center .width-half}</a>
+<figcaption>Groundhog family who eventually became our camp mascots (and occasionally broke into our food supply)</figcaption>
 
 {% include figure image_path="/assets/images/24-08-22/signal-2024-07-06-17-41-22-690-9.jpg" alt="" caption="Our last day, after we took everything down. :( I'm gonna miss that beautiful and welcoming space so much - I made more friends in those 60 days than I have the entire rest of the three years I've been in London." %}
 
