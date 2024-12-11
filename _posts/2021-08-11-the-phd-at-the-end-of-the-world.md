@@ -1,7 +1,7 @@
 ---
 title: "The PhD at the end of the world"
 date: 2021-08-11T13:00:00-04:00
-published: true
+published: false
 categories:
   - blog
 tags:
