@@ -11,6 +11,8 @@ tags:
 use_math: true
 ---
 
+{% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
+
 Okay, I get it, y’all are probably tired as hell of me blabbing on about “LRO this” and “Diviner that”, but today I thought I should give an overview of just what the hell exactly these spacecraft/instruments _are_, and context for how they got to where they are today. No wait, don’t leave! I promise it’s really interesti---
 
 ...welp, alright, now that those people are gone, I guess it’s just you info freaks left---and I’m sure _you_ wanna hear the rest of this tale! So, here goes:
@@ -31,7 +33,16 @@ One of the key instruments in observing the LCROSS impact and detecting evidence
 
 Mars Climate Sounder has 9 channels like Diviner, but they span a different range of wavelengths. At Mars, MCS was primarily designed (as its name suggests) to probe the structure of the Martian atmosphere. Therefore, the 9 channels were chosen so as to span the expected range of temperatures in the atmosphere (15.4-27.1 $\mu$m), with specific bands chosen especially to sense the presence and quantity of water vapour in two spectral bandpasses (41.7 and 42.1 $\mu$m). Additionally, the detectors had to be miniaturized compared to previous thermal infrared instruments on interplanetary spacecraft, which were traditionally quite bulky from utilizing an interferometer for high-spectral-resolution measurements. MCS would need to scan the limb of Mars as well as pivot to obtain nadir observations using a two-axis azimuth-elevation mount, meaning the whole assembly had to fit on a platform capable of pointing rather quickly. Thus, the MCS team utilized small thermopile detectors with micro-mesh filters over them, a solution that had been used on other thermal camera systems before, but never an interplanetary spacecraft. Finally, the 9 channels were divided between two telescopes (A and B) comprising the MCS focal plane, giving MCS its characteristic WALL-E-esque look:
 
+{% comment %}
 {% include figure image_path="/assets/images/McCleese2007-fig1.png" alt="Image of the foil-covered Mars Climate Sounder mission, a suspicious lookalike to Diviner..." caption="" %}
+{% endcomment %}
+
+<figure>
+  <a href="{{ imgpath }}/McCleese2007-fig1.png" title="Image of the foil-covered Mars Climate Sounder mission, a suspicious lookalike to Diviner...">
+    <img src="{{ imgpath }}/McCleese2007-fig1.png" alt="Image of the foil-covered Mars Climate Sounder mission, a suspicious lookalike to Diviner...">
+  </a>
+  <figcaption></figcaption>
+</figure>
 
 Diviner, on the other hand, would be operating on an airless body with temperature swings wildly higher (127$^{\circ}$C vs 20$^{\circ}$C) and lower (~$-$250$^{\circ}$C in polar cold traps vs $-$153$^{\circ}$C) than those on Mars---thus, the wavelength range of the filters needed would have to be much broader than MCS's. Additionally, since it wouldn’t be sensing suspended water in an atmosphere, Diviner’s compositional channels were free to be altered from those on MCS. The choice was made to place three of the channels near the 8-$\mu$m Christiansen feature (CF), a spectral peak in emissivity associated with the silicic composition of rocks and powdered materials in vacuum. This peak is dependent on the polymerization state of silicate minerals; thus, highly-polymerized materials such as feldspars exhibit CF peaks at shorter wavelengths than less-polymerized silicates like pyroxene and olivine.
 
@@ -39,13 +50,31 @@ The final filter selection for Diviner therefore encompassed two broadband solar
 
 Additionally, since Diviner was meant to be primarily a nadir-pointing mapping instrument, the elevation-azimuth mount for the optical bench assembly may have been forgone. However, since the primary benefit of Diviner’s design was that it was essentially a copy of MCS, the decision was made to include the two-axis mount, mostly to allow calibration of surface temperature measurements through intermittent measurement of an internal blackbody target and a well-characterized solar-reflecting surface. But it turned out that this choice became instrumental (ha) in Diviner’s past and ongoing success as a 12-year-old sciencing machine. The freedom to point Diviner in a range of orientations relative to the spacecraft meant that Diviner could still take measurements when LRO was rolling or slewing to acquire off-nadir observations with its other instruments, something the rest of the instruments just had to go along for the ride with.
 
+{% comment %}
 {% include figure image_path="/assets/images/Hayne2010-fig1-Diviner-LCROSS-flash.jpeg" alt="Fig. 1 from Hayne et al. (2010)" caption="Left: Diviner observations in multiple channels of the area of the LCROSS impact just before and 90 seconds after impact. Right: context for the LCROSS impact site in Cabeus crater, with Diviner-derived temperatures providing a basemap." %}
+{% endcomment %}
+
+<figure>
+  <a href="{{ imgpath }}/Hayne2010-fig1-Diviner-LCROSS-flash.jpeg" title="Fig. 1 from Hayne et al. (2010)">
+    <img src="{{ imgpath }}/Hayne2010-fig1-Diviner-LCROSS-flash.jpeg" alt="Fig. 1 from Hayne et al. (2010)">
+  </a>
+  <figcaption>Left: Diviner observations in multiple channels of the area of the LCROSS impact just before and 90 seconds after impact. Right: context for the LCROSS impact site in Cabeus crater, with Diviner-derived temperatures providing a basemap. <a href="https://doi.org/10.1126/science.1197135">(Source: fig. 1 from Hayne et al., 2010)</a></figcaption>
+</figure>
 
 This was first put to use when Diviner was able to measure the thermal glow of the LCROSS impact, and therefore constrain estimates of the size of the crater produced and the amount of water in the resulting ejecta plume. Since that time, Diviner’s off-nadir capabilities have proven to be invaluable assets for the ongoing success of LRO. During lunar eclipse, Diviner has been able to point at targets off its nadir track over multiple successive orbits to measure the rapid near-surface cooling that occurs during these events, along with measuring the directional emissivity and obtain estimates of the roughness of the lunar surface by building up an “emission phase function” by observing certain targets at many different angles.
 
 This pointing capability, however, has also proven to be somewhat of a woe: last summer, it was discovered that Diviner was suffering from a very small but significant pointing anomaly, which meant that observations of sub-pixel thermally-bright targets were not able to be co-registered. After measuring the offsets between the expected and measured positions of a large number of these targets across the Moon, the team was able to come up with a temporary fix that has significantly improved our data quality:
 
+{% comment %}
 {% include figure image_path="/assets/images/diviner_offset_correction.png" alt="Comparison of Diviner channel 6 data on a fresh impact crater, before and after applying a preliminary correction to account for the pointing errors." caption="Ah, that's where I left my glasses!" %}
+{% endcomment %}
+
+<figure>
+  <a href="{{ imgpath }}/diviner_offset_correction.png" title="Comparison of Diviner channel 6 data on a fresh impact crater, before and after applying a preliminary correction to account for the pointing errors.">
+    <img src="{{ imgpath }}/diviner_offset_correction.png" alt="Comparison of Diviner channel 6 data on a fresh impact crater, before and after applying a preliminary correction to account for the pointing errors.">
+  </a>
+  <figcaption>Ah, that's where I left my glasses!</figcaption>
+</figure>
 
 The difference is remarkable, like putting a pair of well-tuned spectacles on our old WALL-E-shaped friend. The consequences of this fix will also be extremely significant for processing of Diviner data by other researchers, including those diving into the massive archive of data from it long after the mission has finally ended.
 
@@ -53,8 +82,7 @@ So that’s the story of how the little thermal scanning robot that could came t
 
 Next time we dive back into research land again: an overview of how to process Diviner data to get all of the wonderful products that people have been able to derive from it, as well as a few dives into the specific ways I’ve been working with it to contribute to the overall science team productivity.
 
-till then,
+Till then,
 
--xoxo gossip grad
-
+-xoxo gossip grad ☾⋆⁺₊⋆
 

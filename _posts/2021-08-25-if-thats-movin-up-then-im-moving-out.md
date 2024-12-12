@@ -35,6 +35,6 @@ Finally, I've got to end with the best thing I've seen in London so far. My part
 
 Okay, I've still got to prepare for a presentation tomorrow, get my apartment set up, and get ready for my first courses starting next Monday, so that's all for now!
 
-till next time,
+Till next time,
 
--xoxo gosssip grad
+-xoxo gossip grad ☾⋆⁺₊⋆

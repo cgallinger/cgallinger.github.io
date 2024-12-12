@@ -14,6 +14,7 @@ tags:
   - gradschool
   - conferences
 ---
+{% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
 Last week, I attended the [NASA Exploration Science Forum (NESF)](https://sservi.nasa.gov/nesf2023/), an annual conference centered around science that advances the capabilities, resources, and scientific return of NASA's human exploration activities. As usual for a scientific conference, there was a whirlwind of running between rooms to catch different talks, getting caught talking to someone about a poster (either theirs or your own) for an uncomfortably long amount of time, and of course the usual stream of complementary 2.5-star coffee administered almost intravenously in order to survive the whole thing. But in addition to these familiar and frantic activities, there was another feeling filling the air-conditioned Maryland hotel: a buzz of electricity, of a barely-contained excitement brewing amongst the only few hundred conference attendees.
 
@@ -24,14 +25,20 @@ The conference's initial iteration in 2008, when it was called the NASA Lunar Sc
 As part of these activities, NASA knew they would need more information about any potential landing sites before they could set humans down on the surface again. The famous incident with Neil Armstrong having to [manually fly Eagle past the boulder field](https://youtu.be/xc1SzgGhMKc?t=922) demonstrated that, although the Lunar Orbiter missions had photographed 99% of the lunar surface at a resolution of 60 m or better, the finest scales of resolution could be crucial for a landing event. Additionally, there were more ambitious objectives associated with a return to the Moon: Bush and O'Keefe wanted astronauts to stay for extended periods of time, and that meant looking for one very precious resource indeed in the vacuum of space---water.
 
 <figure class="half">
-    <a href="/assets/images/23-07-26/LRO_(2007)_crop.jpg"><img src="/assets/images/23-07-26/LRO_(2007)_crop.jpg" alt="LRO" title="LRO"></a>
-    <a href="/assets/images/23-07-26/LCROSS_Centaur.jpg"><img src="/assets/images/23-07-26/LCROSS_Centaur.jpg" alt="LCROSS and Centaur upper stage" title="LCROSS and Centaur upper stage"></a>
+    <a href="{{ imgpath }}/LRO_(2007)_crop.jpg"><img src="{{ imgpath }}/LRO_(2007)_crop.jpg" alt="LRO" title="LRO"></a>
+    <a href="{{ imgpath }}/LCROSS_Centaur.jpg"><img src="{{ imgpath }}/LCROSS_Centaur.jpg" alt="LCROSS and Centaur upper stage" title="LCROSS and Centaur upper stage"></a>
     <figcaption>(Left) LRO and (right) LCROSS, with the Centaur upper stage designed to slam into a lunar PSR.</figcaption>
 </figure>
 
 For these reasons, the "Vision for Space Exploration" set out goals to produce a spacecraft as the first part of its "Lunar Architecture" that would map the still largely-unexplored polar regions in search of water, as well as obtaining better images and data on the Moon as a whole with new technologies. This call for instruments eventually resulted in the development of two spacecraft: the Lunar Reconnaissance Orbiter (LRO), and the Lunar Crater Observation and Sensing Satellite (LCROSS). The former of these would be a workhorse orbiter, fitted with seven scientific instruments that would allow it to determine the form and quantity of frozen water at the poles, whether in thick sheets, buried interspersed "snow", or a layer of surface frost. The latter would be a more targeted investigation for the presence of water, but also a much more direct one: LCROSS would fly through the plume produced as the empty Centaur upper stage that had propelled it and LRO to the Moon slammed into the dark recesses of a "Permanently Shadowed Region" (PSR), in the hopes of getting a more direct taste of the Moon's water before crashing into the surface itself.
 
+{% comment %}
 {% include figure image_path="/assets/images/23-07-26/lro_lcross_atlas.jpg" alt="The configuration of the LRO and LCROSS spacecraft inside the Atlas rocket that would carry them both to the Moon." caption="The configuration of the LRO and LCROSS spacecraft inside the Atlas rocket that would carry them both to the Moon." %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/lro_lcross_atlas.jpg">
+![image-center]({{ imgpath }}/lro_lcross_atlas.jpg){: .align-center }</a>
+<figcaption>The configuration of the LRO and LCROSS spacecraft inside the Atlas rocket that would carry them both to the Moon.</figcaption>
 
 When they finally launched in 2009, both LCROSS and LRO were massive successes: LCROSS [detected direct evidence of water in the plume from Cabeus crater](https://doi.org/10.1126/science.1186986) using UV, visible, and NIR spectorgraphs, and [LRO's ultraviolet spectrograph](https://doi.org/10.1126/science.1186474) also confirmed the presence of water and other volatiles in the plume. LRO then went on to complete a very successful one-year mapping mission, followed by another year-long primary science mission---so successful that the spacecraft's operations have been extended five times since, leading to its present operations around the Moon to this very day.
 
@@ -41,7 +48,13 @@ But then, Obama was elected. While this was a fantastic development for the US i
 
 The rest of this story is a complicated one of Congressional infighting and Senators trying to save what they could of Constellation to benefit their own polities, and would take much longer than a short blog post to fully elucidate all the details and shady back-door deals. But the upshot is the announcements you've probably heard of in the news: the start of the Artemis program, which will bring humans back to the lunar surface before the end of the decade. When this was first announced under the Trump administration, I was skeptical it would amount to much, and I'm sure the people who lived through Constellation were even more so. But I think this changed in the minds of the entire world on November 16 of last year:
 
+{% comment %}
 {% include figure image_path="/assets/images/23-07-26/Artemis-1.jpg" alt="" caption="" %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/Artemis-1.jpg">
+![image-center]({{ imgpath }}/Artemis-1.jpg){: .align-center }</a>
+<figcaption></figcaption>
 
 Under the Obama administration, the scope of the NLSI was broadened to encompass other potential targets for human exploration, and thus it was renamed the Solar System Exploration Research Virtual Institute. Accordingly, the Lunar Science Forum also had a change of identity, becoming the first [NASA Exploration Science Forum in 2014](https://web.archive.org/web/20140802202511/http://sservi.nasa.gov/NESF2014/). 
 

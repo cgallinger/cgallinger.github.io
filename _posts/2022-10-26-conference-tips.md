@@ -9,10 +9,17 @@ tags:
   - gradschool
   - conferences
 ---
+{% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
 Earlier this month, the [54th annual meeting](https://aas.org/meetings/dps54) of the Division for Planetary Sciences (DPS) of the American Astronomical Association took place in the very town in which I've been working towards my PhD: beautiful, sunny London... Otario?
 
+{% comment %}
 {% include figure image_path="/assets/images/LondonOtario.png" caption="10/10, no notes" alt="" %}
+{% endcomment %}
+<a href="{{ imgpath }}/LondonOtario.png">
+![image-center]({{ imgpath }}/LondonOtario.png){: .align-center .width-threequarter }</a>
+<figcaption>10/10, no notes</figcaption>
+
 Our lab supervisor, Dr. Catherine Neish, is the [current DPS chair](https://dps.aas.org/leadership/officers), and it was her influence and hard work that was able to bring this conference to Canada<span class="ref"><span class="refnum">[1]</span><span class="refbody">Hey, we're technically still part of _an_ America, right?</span></span> for the first time. While I'd heard of DPS before, this was never a conference I had personally attended. In general, my impression prior to this year was that DPS was mainly for people who were on the astronomy side of planetary science---looking up through telescopes at single bright dots in the sky, measuring light curves or spectroscopic profiles, and in general never really _seeing_ the objects they were studying.
 
 Given this perception, I felt a little odd presenting some of my work there, since it mainly focused on mapping variations in physical properties from dozens(!) of pixels over our much closer (and definitely well-resolved) Moon. Despite this, several months ago I submitted my abstract and forged ahead, hoping I would figure out where I fit in once I was actually at the conference and could read the vibes better.
@@ -27,7 +34,10 @@ Another positive outcome of pandemic conference changes has been the recording o
 
 In fairness, this is not an _entirely_ new concept: LPI has been releasing recordings of some of the special sessions at LPSC for several years before the pandemic, e.g.:
 
+{% comment %}
 <p align="center"><iframe width="480" height="360" src="https://www.youtube.com/embed/ZtoLw0KWzsU" frameborder="0"></iframe></p>
+{% endcomment %}
+{% include video id="ZtoLw0KWzsU" provider="youtube" %}
 
 However, this is the first time we've had access to the *full* catalogue of talks at every conference, which is an incredible blessing. It's also useful if, like me, you sometimes get caught up in the general spirit of a talk and forget some significant details that you want to remember to look up later---or, G-d forbid, if the speaker includes a URL _on a slide_<span class="ref"><span class="refnum">[6]</span><span class="refbody">Please never do this</span></span> that you weren't able to frantically scribble down on a scrap piece of paper or notebook before they moved onto the next one.
 

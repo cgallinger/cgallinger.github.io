@@ -1,6 +1,5 @@
 ---
 title: "Time to Call a Plumber: Fixing the Leaky Pipeline"
-excerpt: ""
 date: 2024-09-19T09:00:00-04:00
 published: true
 related: false

@@ -1,6 +1,5 @@
 ---
 title: "We All See the Same Moon"
-excerpt: ""
 date: 2024-12-11T09:00:00-04:00
 published: true
 related: false
@@ -13,12 +12,9 @@ tags:
 
 {% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
-
 ![]({{ imgpath }}/chaco_canyon_eclipse_petroglyph.jpg)
 
-
 {{ imgpath }}
-
 
 <span class="ref"><span class="refnum">[1]</span><span class="refbody">   </span></span>
 

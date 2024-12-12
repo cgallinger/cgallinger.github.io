@@ -1,6 +1,5 @@
 ---
 title: "Mental Hell-th"
-excerpt: ""
 date: 2024-10-24T09:00:00-04:00
 published: true
 related: false

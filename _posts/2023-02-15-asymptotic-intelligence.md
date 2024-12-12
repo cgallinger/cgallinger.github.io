@@ -1,7 +1,7 @@
 ---
 title: "Asymptotic Intelligence"
-subtitle: "AI is growing smarter by feeding it the internet. What happens when it starts to eat itself?"
-excerpt: "AI is growing smarter by feeding it the internet. What happens when it starts to eat itself?"
+subtitle: "AI is growing smarter by feeding it the internet. What happens when it starts to consume itself?"
+excerpt: "AI is growing smarter by feeding it the internet. What happens when it starts to consume itself?"
 date: 2023-02-15T09:00:00-04:00
 published: true
 related: false
@@ -11,7 +11,17 @@ categories:
 tags:
   - 
 ---
+{% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
+
+{% comment %}
 {% include figure image_path="/assets/images/stable-diffusion-self-portrait.jpeg" caption='"Self-portrait of Stable Diffusion", by [Stable Diffusion](https://stablediffusionweb.com/)' alt="" %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/stable-diffusion-self-portrait.jpeg">
+![image-center]({{ imgpath }}/stable-diffusion-self-portrait.jpeg){: .align-center .width-threequarter }</a>
+<figcaption>"Self-portrait of Stable Diffusion", by <a href="https://stablediffusionweb.com/">Stable Diffusion</a></figcaption>
+
+
 _Note: this post is definitely not the first time someone has had this particular take, and while writing I came across [this blog post](https://castlebridge.ie/insights/llms-and-the-enshittening-of-knowledge/) that hits on many of the same key ideas expressed here. However, I'm hoping I can expound upon it and bring in some additional ideas that will help push the conversation on this aspect of our AI-infused future forward._
 {: style="text-align: left; font-size:0.9em;"}
 <br>
@@ -19,7 +29,13 @@ Everyone and their mother has written an opinion piece on ChatGPT, the harbinger
 
 The general features of AI are well-known by now: they have to be trained towards a particular task; there needs to be a reward or feedback mechanism to evaluate how good they are at that task; and mostly importantly, they need a lot, _lot_ of training examples to fiddle their internal optimization knobs until they slowly converge on optimal performance at that task. The general sense in how this training is accomplished has been explained [much better by others](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) than I could ever hope to, so click that link if you're interested in the details. But the salient point right now is that essentially, the more data you have, the better the output of your model should be, at least in theory.<span class="ref"><span class="refnum">[1]</span><span class="refbody">We'll come back to the caveats around this a little later on.</span></span>
 
+{% comment %}
 {% include figure image_path="/assets/images/xkcd_2048_curve_fitting_finalgraph.png" caption="[The tyranny of curve-fitting](https://xkcd.com/2048/)" alt="A figure showing a model fit to a series of scatter points, that goes wildly out of control after being extended beyond the range of the existing data." %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/xkcd_2048_curve_fitting_finalgraph.png" title="A figure showing a model fit to a series of scatter points, that goes wildly out of control after being extended beyond the range of the existing data.">
+![image-center]({{ imgpath }}/xkcd_2048_curve_fitting_finalgraph.png){: .align-center .width-half }</a>
+<figcaption><a href="https://xkcd.com/2048/">The tyranny of curve-fitting</a></figcaption>
 
 This last point is partially what's made me less afraid of AI coming to take my job than people in most other computer-based occupations. In order to avoid the terror of "overfitting", where your model is trained extremely well on your training dataset but utterly fails when given new input it's never seen before, you have to have both the initial massive bank of data to perform the training on, _and_ an additional set of data against which you can test the performance of your model. In the field of planetary science, there actually [aren't](https://doi-org.proxy1.lib.uwo.ca/10.1016/j.icarus.2018.06.022) [that](https://doi.org/10.3847/PSJ/ab9a52) [many](https://doi-org.proxy1.lib.uwo.ca/10.1016/j.icarus.2009.04.026) catalogues of data large enough to be useful for both the initial training while still reserving a sufficient quantity for model-validation purposes. In many other domains, however, the common fear is that our modern internet-connected world has given us _too much_ data for standard techniques of the past to be able to cope with it all and turn it into useful insight. This has led to the rise of "Big Data" as a term of art in computer science in the past decade, and while methods in this field don't necessarily _have_ to incorporate machine learning/AI/neural networks/etc., in practice they have become the first tools that many researchers reach for.
 
@@ -31,7 +47,13 @@ ChatGPT solves this problem by eschewing any attempt to systematically quantify 
 
 However, the second answer to ChatGPT's success is somehow both obvious and stupefying: it is simply [way, way, _**way**_ larger](https://lambdalabs.com/blog/demystifying-gpt-3) than any other language model before it. To give you a sense of scale, keeping in mind that the first iteration of this language model family was released less than _five_ years ago, here is a table of the number of parameters and input corpus sizes for the current lineage of GPT models:
 
+{% comment %}
 {% include figure image_path="/assets/images/GPT-parameter-corpus-sizes.png" caption="Taken from [this Wikipedia page](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)" alt="" %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/GPT-parameter-corpus-sizes.png">
+![image-center]({{ imgpath }}/GPT-parameter-corpus-sizes.png){: .align-center}</a>
+<figcaption>Taken from <a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer">this Wikipedia page</a></figcaption>
 
 Now, size alone [does not guarantee](https://arxiv.org/pdf/2001.08361.pdf) an increase in a language model's success at mimicking human-like text output. In order for an increase in, say, the number of parameters in the model to be useful, the model also needs a corresponding increase in the amount of training data it receives to actually be able to _use_ those parameters to extract new information. Conversely, an increase in the amount of input training data without a concurrent increase in the model parameter space will mean the model just does not have enough knobs to tweak to capture the complexity of all that data. And, as explained above, _both_ of these variables can be inadequate at getting your model to actually do what you want it to do if the goals you give it are misaligned with the goals you desire from it.
 
@@ -56,14 +78,21 @@ These models do not work like human brains, which can extrapolate from a few sma
 
 One of the first times I saw it come up in the context of scientists considering it a serious issue was [this tweet](https://twitter.com/paniterka_ch/status/1599893718214901760?s=20), which started off by talking about its familiar issues with hallucinations that in this case resulted in made-up papers with made-up authors on a subject it mostly BS'd or wrote only very vaguely about. But this [follow up](https://twitter.com/paniterka_ch/status/1599893818186543105?s=20) further down in the thread seemed to indicate that, to this researcher at least, its answers were good enough to convince even seasoned experts that the nonsense it was dreaming up in its bit-addled mind could possibly be mistaken as real. But could it? While I'm not personally a researcher in the field of solid-state physics, I read one of the "spooky" screenshot examples and, well, I'll let you see for yourself...
 
+{% comment %}
 {% include figure image_path="/assets/images/electromagnons.jpeg" caption="r/iamverysmart" alt="" %}
+{% endcomment %}
+
+<a href="{{ imgpath }}/electromagnons.jpeg">
+![image-center]({{ imgpath }}/electromagnons.jpeg){: .align-center .width-threequarter}</a>
+<figcaption>r/iamverysmart</figcaption>
 
 To me at least, the repetitions and vague phrasing, using the same jargony terms over and over without _really_ delivering any new insight into any of them, plus its usual 8th-grader 5-paragraph response format would have immediately set off my BS detector. But hey, I didn't ask it about the thermophysics of lunar granular media, so who knows, maybe it actually _would_ spook me if I was familiar enough with whatever technical terms it tried to use in its bamboozling attempt and applied them semi-accurately.
 
 ## Resources:
 
+{% comment %}
 ChatGPT not the first time data quality spiral has happened - see e.g. [famous quote misattributed to einstein or something]
-
+{% endcomment %}
 
 
 [social media as example of availability of broadcasting contributing to decline in information quality/literacy (hacker news)](https://news.ycombinator.com/item?id=34548757)
@@ -86,4 +115,4 @@ It has to drop. ChatGPT can not _source_ new truths except by rare accident.
 >
 > <cite>Hacker News user <a href="https://news.ycombinator.com/item?id=34548503">jerf</a></cite>
 
-https://www.newscientist.com/article/2353751-ai-chatbots-could-hit-a-ceiling-after-2026-as-training-data-runs-dry/
+[new scientist article about limits on quantity of training data](https://www.newscientist.com/article/2353751-ai-chatbots-could-hit-a-ceiling-after-2026-as-training-data-runs-dry/)

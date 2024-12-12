@@ -1,8 +1,8 @@
 ---
 title: "You Better Field-Work"
-excerpt: ""
 date: 2023-10-19T09:00:00-04:00
 published: false
+hidden: true
 related: false
 comments: true
 categories:
@@ -10,6 +10,7 @@ categories:
 tags:
   - gradschool
 ---
+{% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
 With the air finally starting to have a real chill, and the sun disappearing well before evening, fall has finally arrived here in [redacted] London, Ontario. Although I'm notoriously a winter-hater, the dread of that encroaching season hasn't _quite_ reached my limbic system yet, so for now I'm still able to appreciate some of the nice things about the one we're currently in. It's certainly a season awash with memory for me, and today I'd like to talk about a couple of the academic experiences it reminds me of.
 
@@ -21,19 +22,26 @@ And not just any rocks! As I mentioned in the blog post from that time, this fie
 
 It was this incredible evidence that was the focus of our field course for the week we spent up there. Every morning, we would wake up and head down to our hotel's conference room for a one-hour lecture on impact crater geology, followed by a day trip out to one of the many locations where the Sudbury impact structure exposes its destructive record. One excursion took us on a path directly across the short axis of the current basin, allowing us to travel "up" through the folded and distorted layers of the Sudbury Igneous Complex, the massive sheet of impact melt rock created in the cataclysmic collision that remained molten for more than ten thousand years afterwards. This extremely long timescale of cooling allowed the melt sheet to chemically "differentiate" into different rock types as different minerals crystallized out at different temperatures---a unique feature of this extraordinary impact not recorded anywhere else in the world.
 
+{% comment %}
 {% include figure image_path="/assets/images/23-10-19/20211001_171242.jpg" alt="" caption="The best field team ✌🏻" %}
+{% endcomment %}
+<a href="{{ imgpath }}/20211001_171242.jpg">
+![image-center]({{ imgpath }}/20211001_171242.jpg){: .align-center }</a>
+<figcaption>The best field team ✌🏻</figcaption>
 
 The other main component of our field course, aside from learning about the general geology and physical processes that produced the rocks we were seeing, was a group mapping project where we were tasked with making measurements on intriguing deposits of material injected into the pre-existing country rock that are known as "Sudbury Breccia". Although I technically have a "Masters in Earth Science", this was the _very first time_ I actually had to create a geologic map based on observations in the field, and I was grateful for my more hard-rock-geology-inclined group members to understand what exactly we were looking at.
 
+{% comment %}
 {% include figure image_path="/assets/images/23-10-19/14A_Gridmap_1.jpeg" alt="A collection of large, angular boulders with dark streaks of Sudbury Breccia running through them, with me on the right for scale" caption="One of the outcrops of Sudbury Breccia we mapped in detail---this one thankfully an easily-accessible roadside location." %}
+{% endcomment %}
+<a href="{{ imgpath }}/14A_Gridmap_1.jpeg" title="A collection of large, angular boulders with dark streaks of Sudbury Breccia running through them, with me on the right for scale" caption="One of the outcrops of Sudbury Breccia we mapped in detail---this one thankfully an easily-accessible roadside location.">
+![image-center]({{ imgpath }}/14A_Gridmap_1.jpeg){: .align-center }</a>
+<figcaption></figcaption>
 
-
-## 
 
 I think the major impression I took away from the Sudbury impact course, much like previous field experiences, was the relationship between the simplified mental models we're taught about the processes that shape our Earth (and the other planets) and how these processes actually manifest in reality. As ever in science, all models are only useful insofar as they allow our limited human intellect to grasp the fundamentals of how nature operates, sectioning the infinitely-complex and tangled web of interactions at scales from the atomic to the astrophysical into well-defined categories. Crucially, however, in employing such models we must not lose sight of the fact that these are _human_ inventions and simplifications that nature is not beholden to, and to that end I think field work is an incredibly important part of getting our minds beyond the textbook and into the real world. 
 
 At the end of the day, for all self-purported our "logic" and "scientific rigour", we are still creative apes who crave a narrative structure to make sense of the world around us. Personally, I think this is in fact one of the great benefits of the artificial constructs of models and taxonomy, as it takes what would otherwise be an endless sea of physical chaos and allows us to narrow in on the specific mechanisms having the greatest influence on its overall form. A good friend of mine, Andrew Siwabessy, has written an [excellent paper](https://doi.org/10.1016/j.pss.2020.105121) critical of some aspects of this endeavour, where these stories can lead us astray into ignoring or rejecting evidence which contradicts their core narrative, and I largely agree that this is a danger of such simplifications. But field work is at least a step towards grounding these stories in an embodied reality, one that we can refer to whenever we try to visualize the inhumanly-slow and monumental forces that move continents and raise mountains.
-
 
 
 
