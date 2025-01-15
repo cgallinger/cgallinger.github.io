@@ -57,7 +57,7 @@ This won't seem to do or display anything, but your changes will now be staged f
 git commit -m "Added new post about creating a website with GitHub Pages"
 ```
 
-When completed, this should display a bunch of \+/\- signs with the files you've changed/added. Finally, we sync (push) this to the origin (our personal GitHub fork of the original repository), and after a short amount of time, the website will automatically update to match the repository content:
+When completed, this should display a bunch of information about the files you've changed/added/deleted. Finally, we sync (push) this to the origin (our personal GitHub fork of the original repository), and after a short amount of time, the website will automatically update to match the repository content:
 
 ```
 git push -u origin
