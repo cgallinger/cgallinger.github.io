@@ -3,8 +3,8 @@ title: "Intersectional Introspection"
 subtitle: "Reconciling past privilege and present pain"
 excerpt: "Reconciling past privilege and present pain"
 date: 2023-03-29T07:00:00-04:00
-published: true
-hidden: false
+published: false
+hidden: true
 related: false
 comments: true
 categories:
@@ -18,14 +18,11 @@ This week we were asked to write about why we deserve to be doing a PhD. I'm not
 
 I've [opined before](https://www.storycollider.org/stories/2018/8/24/science-saved-my-life-stories-about-life-saving-passion) about the woes of transitioning early in my scientific career, but a part I've often avoided talking about is how I got to that stage in the first place. Unlike many (probably the vast majority) of young people, I was one of those kids who knew _exactly_ what they wanted to do with their lives from their first conscious memories: I wanted to be a scientist. And not just any scientist, but specifically one studying and exploring the solar system. I had a book called Space At Your Fingertips that I'm pretty sure I made my mom read to me even before I knew how to read---I was _that_ ready to get going on this "exploring the cosmos" shit.
 
-{% comment %}
-{% include figure image_path="/assets/images/space_at_your_fingertips.jpg" caption="The hottest commodity of 1997" alt="" %}
-{% endcomment %}
 <a href="{{ imgpath }}/space_at_your_fingertips.jpg" title='An image of the children&#39;s picture book "Space At Your Fingertips", one of my favourites as a kid'>
 ![image-center]({{ imgpath }}/space_at_your_fingertips.jpg){: .align-center .width-threequarter }</a>
 <figcaption>The hottest commodity of 1997</figcaption>
 
-So it was not much of a struggle for me (or my parents) when I also got into robotics, palaeontology, programming, and other nerdy activities as I got older. These were stereotypically boy things, and well, as far as anyone knew then, I was a boy, so they were more than happy to support me. The same was true of teachers and friends and other mentors; although, as I've written about previously, I struggled somewhat academically starting fairly early in elementary school, no one really believed I was _incapable_ of doing or achieving anything, just that I had trouble focusing or was too much of a perfectionist.
+So it was not much of a struggle for me (or my parents) when I also got into robotics, palaeontology, programming, and other nerdy activities as I got older. These were stereotypically boy things, and well, as far as anyone knew then, I was a boy, so they were more than happy to support me. The same was true of teachers and friends and other mentors: although, as I've written about previously, I struggled somewhat academically starting fairly early in elementary school, no one really believed I was _incapable_ of doing or achieving anything, just that I had trouble focusing or was too much of a perfectionist.
 
 The actually discouraged interests in my life came somewhat later: namely, art, theater, video production, and fashion. Of course, these are all frivolous pursuits that would _never_ lead to a job<span class="ref"><span class="refnum">[1]</span><span class="refbody">🙄</span></span>, so it's no wonder my parents were more supportive of my scientific and technological proclivities.<span class="ref"><span class="refnum">[2]</span><span class="refbody">Jokes on them!! Now I'm a broke grad student! 😂😭</span></span> In what I'm sure was a great relief to all the adults involved, by the time I was staring down university applications I had come back around to the idea that science was the pursuit that still mattered to me the most, and so it was the only thing I applied for. And, well, you know the rest now.
 

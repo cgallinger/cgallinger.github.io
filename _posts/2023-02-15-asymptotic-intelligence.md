@@ -13,14 +13,9 @@ tags:
 ---
 {% assign imgpath = site.url | append: "/assets/images/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
-{% comment %}
-{% include figure image_path="/assets/images/stable-diffusion-self-portrait.jpeg" caption='"Self-portrait of Stable Diffusion", by [Stable Diffusion](https://stablediffusionweb.com/)' alt="" %}
-{% endcomment %}
-
 <a href="{{ imgpath }}/stable-diffusion-self-portrait.jpeg">
 ![image-center]({{ imgpath }}/stable-diffusion-self-portrait.jpeg){: .align-center .width-threequarter }</a>
 <figcaption>"Self-portrait of Stable Diffusion", by <a href="https://stablediffusionweb.com/">Stable Diffusion</a></figcaption>
-
 
 _Note: this post is definitely not the first time someone has had this particular take, and while writing I came across [this blog post](https://castlebridge.ie/insights/llms-and-the-enshittening-of-knowledge/) that hits on many of the same key ideas expressed here. However, I'm hoping I can expound upon it and bring in some additional ideas that will help push the conversation on this aspect of our AI-infused future forward._
 {: style="text-align: left; font-size:0.9em;"}
@@ -29,9 +24,9 @@ Everyone and their mother has written an opinion piece on ChatGPT, the harbinger
 
 The general features of AI are well-known by now: they have to be trained towards a particular task; there needs to be a reward or feedback mechanism to evaluate how good they are at that task; and mostly importantly, they need a lot, _lot_ of training examples to fiddle their internal optimization knobs until they slowly converge on optimal performance at that task. The general sense in how this training is accomplished has been explained [much better by others](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) than I could ever hope to, so click that link if you're interested in the details. But the salient point right now is that essentially, the more data you have, the better the output of your model should be, at least in theory.<span class="ref"><span class="refnum">[1]</span><span class="refbody">We'll come back to the caveats around this a little later on.</span></span>
 
-{% comment %}
+<!---
 {% include figure image_path="/assets/images/xkcd_2048_curve_fitting_finalgraph.png" caption="[The tyranny of curve-fitting](https://xkcd.com/2048/)" alt="A figure showing a model fit to a series of scatter points, that goes wildly out of control after being extended beyond the range of the existing data." %}
-{% endcomment %}
+-->
 
 <a href="{{ imgpath }}/xkcd_2048_curve_fitting_finalgraph.png" title="A figure showing a model fit to a series of scatter points, that goes wildly out of control after being extended beyond the range of the existing data.">
 ![image-center]({{ imgpath }}/xkcd_2048_curve_fitting_finalgraph.png){: .align-center .width-half }</a>
@@ -47,13 +42,42 @@ ChatGPT solves this problem by eschewing any attempt to systematically quantify 
 
 However, the second answer to ChatGPT's success is somehow both obvious and stupefying: it is simply [way, way, _**way**_ larger](https://lambdalabs.com/blog/demystifying-gpt-3) than any other language model before it. To give you a sense of scale, keeping in mind that the first iteration of this language model family was released less than _five_ years ago, here is a table of the number of parameters and input corpus sizes for the current lineage of GPT models:
 
-{% comment %}
-{% include figure image_path="/assets/images/GPT-parameter-corpus-sizes.png" caption="Taken from [this Wikipedia page](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)" alt="" %}
-{% endcomment %}
-
-<a href="{{ imgpath }}/GPT-parameter-corpus-sizes.png">
-![image-center]({{ imgpath }}/GPT-parameter-corpus-sizes.png){: .align-center}</a>
-<figcaption>Taken from <a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer">this Wikipedia page</a></figcaption>
+<table>
+  <colgroup>
+    <col width="15%" />
+    <col width="25%" />
+    <col width="60%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Model</th>
+      <th>Parameter count</th>
+      <th>Training data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td markdown="span">GPT-1</td>
+      <td markdown="span">117 million</td>
+      <td markdown="span">BookCorpus: 4.5 GB of text, 7000 unpublished books of various genres</td>
+    </tr>
+    <tr>
+      <td markdown="span">GPT-2</td>
+      <td markdown="span">1.5 billion</td>
+      <td markdown="span">1WebText: 40 GB of text, 8 million documents, from 45 million webpages upvoted on Reddit.</td>
+    </tr>
+    <tr>
+      <td markdown="span">GPT-3</td>
+      <td markdown="span">75 billion</td>
+      <td markdown="span">499 billion tokens consisting of CommonCrawl (570 GB), WebText, English Wikipedia, and two books corpora (Books1 and Books2).</td>
+    </tr>
+  </tbody>
+  <tfoot style="text-align:left">
+    <tr class="no-bottom-border">
+      <td colspan='100%'>Modified from <a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer">this Wikipedia page</a></td>
+    </tr>
+  </tfoot>
+</table>
 
 Now, size alone [does not guarantee](https://arxiv.org/pdf/2001.08361.pdf) an increase in a language model's success at mimicking human-like text output. In order for an increase in, say, the number of parameters in the model to be useful, the model also needs a corresponding increase in the amount of training data it receives to actually be able to _use_ those parameters to extract new information. Conversely, an increase in the amount of input training data without a concurrent increase in the model parameter space will mean the model just does not have enough knobs to tweak to capture the complexity of all that data. And, as explained above, _both_ of these variables can be inadequate at getting your model to actually do what you want it to do if the goals you give it are misaligned with the goals you desire from it.
 
@@ -62,7 +86,7 @@ Now, size alone [does not guarantee](https://arxiv.org/pdf/2001.08361.pdf) an in
 (meat of the post, explaining the issues with ChatGPT-generated content being fed back into training data, and correspondences with the problem of [SEO-optimized auto-generated spam clogging up Google searches](https://dkb.blog/p/google-search-is-dying))
 
 
-The prospect of "running out" of sufficient training data to improve language models is not just a thought experiment or hypothetical: there have been [real concerns](https://arxiv.org/pdf/2211.04325.pdf) raised by [multiple researchers](https://doi.org/10.1145/3502287) about future limitations on training dataset sizes in the relatively near future. Although the total corpus of text produced on the internet since the birth of the World Wide Web in the early 90s is [massive](https://commoncrawl.github.io/cc-crawl-statistics/plots/crawlsize#:~:text=Cumulative%20Size)<span class="ref"><span class="refnum">[4]</span><span class="refbody">even if only considering the subset of all text ever posted that's both a) still available online and b) searchable via web crawlers</span></span>, the amount of [_high quality_ data](https://link.springer.com/article/10.1007/s10579-020-09489-2)---that is, data which has been screened and tagged for violent or otherwise undesirable content, cleaned of any unavailable glyphs or other errors in rendering, and de-duplicated---has been asymptotically approaching a plateau since (some time), as the work necessary to make the firehose of information actually _useful_ has increased exponentially. While just a few years the major concern of the modern internet age was the [information overload]() and inability for any one person or even group of people to consume and process that volume of data, we now see ourselves staring down the opposite barrel: a machine learning system with an endless hunger for more, consuming at superhuman speeds, that will [soon overtake](https://www.technologyreview.com/2022/11/24/1063684/we-could-run-out-of-data-to-train-ai-language-programs/) our feeble abilities to generate new thoughts and ideas---even from all 8 billion of us.
+The prospect of "running out" of sufficient training data to improve language models is not just a thought experiment or hypothetical: there have been [real concerns](https://arxiv.org/abs/2211.04325) raised by [multiple researchers](https://doi.org/10.1145/3502287) about limitations on training dataset sizes in the relatively near future. Although the total corpus of text produced on the internet since the birth of the World Wide Web in the early 90s is [massive](https://commoncrawl.github.io/cc-crawl-statistics/plots/crawlsize#:~:text=Cumulative%20Size),<span class="ref"><span class="refnum">[4]</span><span class="refbody">even if only considering the subset of all text ever posted that's both a) still available online and b) searchable via web crawlers</span></span> the amount of [_high quality_ data](https://link.springer.com/article/10.1007/s10579-020-09489-2)---that is, data which has been screened and tagged for violent or otherwise undesirable content, cleaned of any unavailable glyphs or other errors in rendering, and de-duplicated---has been asymptotically approaching a plateau since \_\_\_\_\_\_\_, as the work necessary to make the firehose of information actually _useful_ has increased exponentially. While just a few years the major concern of the modern internet age was information overload and the inability of any one person or even group of people to consume and process that volume of data, we now see ourselves staring down the opposite barrel: a machine learning system with an endless hunger for more, consuming at superhuman speeds, that will [soon overtake](https://www.technologyreview.com/2022/11/24/1063684/we-could-run-out-of-data-to-train-ai-language-programs/) our feeble abilities to generate new thoughts and ideas---even from all 8 billion of us.
 
 Even before we hit the training data ceiling, however, there is an even more pressing issue facing AI research: now that text-generating language models have been unleashed to the public and made easier to access than ever, what will happen to that growing corpus of text as it becomes populated with their own output? This is the problem pointed out in the [blog post](https://castlebridge.ie/insights/llms-and-the-enshittening-of-knowledge/) I mentioned at the beginning of this post by [Daragh Ó Briain](https://castlebridge.ie/team/daragh-o-brien/)<span class="ref"><span class="refnum">[5]</span><span class="refbody">Yes, that is spelled correctly, there is no apostrophe---and apparently there is an amusing story behind this which I will never know</span></span>, an expert in data quality, data governance and information management, who delightfully termed it the "Enshittening of Knowledge".
 
@@ -71,28 +95,38 @@ Even before we hit the training data ceiling, however, there is an even more pre
 In fairness, this degradation 
 
 
-These models do not work like human brains, which can extrapolate from a few small examples and make large logical leaps by connecting disparate learned concepts and synthesize these into novel understanding. Rather, they are essentially an enormously scaled-up [something], drawing from a hundred-billion-dimensional prior and guessing what [something something]. In order to make better predictions, these [blanks] need exponentially-increasing amounts of training data. That means they can only ever be proportionately as good as the corpus fed into them, and how carefully that corpus is curated to encourage the desired traits in the final trained model.
+These models do not work like human brains, which can extrapolate from a few small examples and make large logical leaps by connecting disparate learned concepts and synthesize these into novel understanding. Rather, they are essentially an enormously scaled-up <b>[something]</b>, drawing from a hundred-billion-dimensional prior and guessing what <b>[something something]</b>. In order to make better predictions, these <b>[blanks]</b> need exponentially-increasing amounts of training data. That means they can only ever be proportionately as good as the corpus fed into them, and how carefully that corpus is curated to encourage the desired traits in the final trained model.
 
 
+## A dumb person's idea of a "smart assistant"
 
+One of the first times I saw it come up in the context of scientists considering it a serious issue was [this tweet](https://twitter.com/paniterka_ch/status/1599893718214901760?s=20)<span class="ref"><span class="refnum">[6]</span><span class="refbody">side note from the future: it is still endlessly funny to me that despite his massive ego-driven push to replace everything on twitter with """x.com""" nonsense, the embed HTML still uses twitter, lmao</span></span>
 
-One of the first times I saw it come up in the context of scientists considering it a serious issue was [this tweet](https://twitter.com/paniterka_ch/status/1599893718214901760?s=20), which started off by talking about its familiar issues with hallucinations that in this case resulted in made-up papers with made-up authors on a subject it mostly BS'd or wrote only very vaguely about. But this [follow up](https://twitter.com/paniterka_ch/status/1599893818186543105?s=20) further down in the thread seemed to indicate that, to this researcher at least, its answers were good enough to convince even seasoned experts that the nonsense it was dreaming up in its bit-addled mind could possibly be mistaken as real. But could it? While I'm not personally a researcher in the field of solid-state physics, I read one of the "spooky" screenshot examples and, well, I'll let you see for yourself...
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Today I asked ChatGPT about the topic I wrote my PhD about. It produced reasonably sounding explanations and reasonably looking citations. So far so good – until I fact-checked the citations. And things got spooky when I asked about a physical phenomenon that doesn’t exist.</p>&mdash; Teresa Kubacka (@paniterka_ch) <a href="https://twitter.com/paniterka_ch/status/1599893718214901760?ref_src=twsrc%5Etfw">December 5, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-{% comment %}
+The thread continued by talking about the familiar issues with hallucinations that in this case resulted in made-up papers with made-up authors on a subject it mostly BS'd or wrote only very vaguely about. 
+
+However, this [follow up](https://twitter.com/paniterka_ch/status/1599893818186543105?s=20) further down seemed to indicate that, to this researcher at least, its answers were good enough to convince even seasoned experts that the nonsense it was dreaming up in its bit-addled mind could possibly be mistaken as real:
+
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">I wanted to drill down on physics. And here it became very spooky: somehow ChatGPT hallucinated an explanation of a non-existing phenomenon using such a sophisticated and plausible language that my first reaction was to actually consider whether this could be true! <a href="https://t.co/uowedCFifP">pic.twitter.com/uowedCFifP</a></p>&mdash; Teresa Kubacka (@paniterka_ch) <a href="https://twitter.com/paniterka_ch/status/1599893818186543105?ref_src=twsrc%5Etfw">December 5, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+But is this really the case? While I'm not personally a researcher in the field of solid-state physics, I read one of the "spooky" screenshot examples and, well, I'll let you see for yourself...
+
+<!---
 {% include figure image_path="/assets/images/electromagnons.jpeg" caption="r/iamverysmart" alt="" %}
-{% endcomment %}
+-->
 
 <a href="{{ imgpath }}/electromagnons.jpeg">
 ![image-center]({{ imgpath }}/electromagnons.jpeg){: .align-center .width-threequarter}</a>
 <figcaption>r/iamverysmart</figcaption>
 
-To me at least, the repetitions and vague phrasing, using the same jargony terms over and over without _really_ delivering any new insight into any of them, plus its usual 8th-grader 5-paragraph response format would have immediately set off my BS detector. But hey, I didn't ask it about the thermophysics of lunar granular media, so who knows, maybe it actually _would_ spook me if I was familiar enough with whatever technical terms it tried to use in its bamboozling attempt and applied them semi-accurately.
+To me at least, the repetitions and vague phrasing, using the same jargony terms over and over without _really_ delivering any new insight into any of them, plus its usual eigth-grader five-paragraph response format would have immediately set off my BS detector. But hey, I didn't ask it about the thermophysics of lunar granular media, so who knows, maybe it actually _would_ spook me if I was familiar enough with whatever technical terms it tried to use in its bamboozling attempt and applied them semi-accurately.
 
 ## Resources:
 
-{% comment %}
+<!---
 ChatGPT not the first time data quality spiral has happened - see e.g. [famous quote misattributed to einstein or something]
-{% endcomment %}
+-->
 
 
 [social media as example of availability of broadcasting contributing to decline in information quality/literacy (hacker news)](https://news.ycombinator.com/item?id=34548757)

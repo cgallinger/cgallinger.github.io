@@ -1,7 +1,8 @@
 ---
 title: "God Rest Ye MIDI Instruments"
 date: 2021-12-15T09:00:00-04:00
-published: true
+published: false
+hidden: true
 categories:
   - blog
 tags:

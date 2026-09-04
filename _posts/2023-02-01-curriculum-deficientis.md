@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Deficientis"
 date: 2023-02-01T09:00:00-04:00
-published: true
+published: false
 hidden: true
 author_profile: true
 read_time: false

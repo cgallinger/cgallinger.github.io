@@ -1,7 +1,8 @@
 ---
 title: "Scientific Origin Story"
 date: 2025-01-14T09:00:00-04:00
-published: true
+published: false
+hidden: true
 related: false
 comments: true
 categories:

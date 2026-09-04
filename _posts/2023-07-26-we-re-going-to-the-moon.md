@@ -4,7 +4,7 @@ excerpt: "A dream of generations is finally unfolding before our eyes---are we r
 date: 2023-07-26T09:00:00-04:00
 header:
   image: /assets/images/image-filename.jpg
-published: true
+published: false
 related: false
 comments: true
 categories:

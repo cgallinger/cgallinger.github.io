@@ -1,7 +1,7 @@
 ---
 title: "Mental Hell-th"
 date: 2024-10-24T09:00:00-04:00
-published: true
+published: false
 related: false
 comments: true
 categories:

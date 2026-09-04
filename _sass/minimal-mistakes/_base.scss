@@ -112,6 +112,9 @@ blockquote {
   padding-right: 1em;
   font-style: italic;
   border-left: 0.25em solid $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   cite {
     font-style: italic;
@@ -205,7 +208,7 @@ figure {
   }
 
   img {
-    width: auto;
+    width: 100%;
     max-height: 600px;
     display: inline-block;
     flex-wrap: nowrap;
@@ -214,6 +217,7 @@ figure {
     /* border-radius: $border-radius; */
     -webkit-transition: $global-transition;
     transition: $global-transition;
+    object-fit: cover;
   }
 
   > a {
