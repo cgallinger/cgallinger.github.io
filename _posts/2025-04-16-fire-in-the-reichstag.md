@@ -2,6 +2,7 @@
 title: "Fire in the _Reichstag_"
 date: 2025-03-16T09:00:00-04:00
 published: false
+visible: false
 hidden: true
 related: false
 comments: true

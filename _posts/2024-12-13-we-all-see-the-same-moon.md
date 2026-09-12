@@ -7,6 +7,8 @@ header:
   overlay_filter: 0.5  # same as adding an opacity of 0.5 to a black background
   caption: "Apollo 15 frame [AS15-81-10920](https://www.flickr.com/photos/projectapolloarchive/21691980452/in/album-72157656755043903/), taken August 5, 1971 (full size [here](/assets/images/2024-12-13-we-all-see-the-same-moon/as15-81-10920-p_contrast_edit.jpg))"
 published: true
+visible: false
+hidden: true
 related: false
 comments: true
 categories:
@@ -64,7 +66,7 @@ Fortuitously, Mirzakhani is located at 17.47°S, 85.20°E---juuuuuuust barely on
 </a>
 ## What's in a name?
 
-If you aren't aware of her, [Maryam Mirzakhani](https://www.youtube.com/watch?v=v0KDDz0s9JA) was an Iranian-American mathematician, a brilliant and ------ ------, and the [first woman to ever win the Fields Medal](https://www.quantamagazine.org/maryam-mirzakhani-is-first-woman-fields-medalist-20140812/) (basically the Nobel Prize of mathematics) back in 2014. Unfortunately, she could not bask long in that achievement, as [her life was tragically cut short](https://www.scientificamerican.com/article/mathematics-world-mourns-maryam-mirzakhani-only-woman-to-win-fields-medal/) by cancer in 2017.
+If you aren't aware of her, [Maryam Mirzakhani](https://www.youtube.com/watch?v=v0KDDz0s9JA) was an Iranian-American mathematician, a brilliant and ------ ------, and the [first woman to ever win the Fields Medal](https://www.quantamagazine.org/maryam-mirzakhani-is-first-woman-fields-medalist-20140812/)<span class="ref"><span class="refnum">[4]</span><span class="refbody">basically the Nobel Prize of mathematics, although mathematicians [hate it when you call it that](https://mathwithbaddrawings.com/2018/07/25/the-forgotten-dream-of-the-fields-medal/)</span></span> back in 2014. Unfortunately, she could not bask long in that achievement, as her life was [tragically cut short](https://www.scientificamerican.com/article/mathematics-world-mourns-maryam-mirzakhani-only-woman-to-win-fields-medal/) by cancer in 2017.
 
 <figure class="half">
     <a href="{{ imgpath }}/fields_cropped.jpg" title="Credit: The Simons Foundation"><img src="{{ imgpath }}/fields_cropped.jpg" alt=""></a>
@@ -77,7 +79,7 @@ If you aren't aware of her, [Maryam Mirzakhani](https://www.youtube.com/watch?v=
 </a>
 <figcaption>Mirzakhani (center) and her co-recipients of the 2014 Fields Medal (far left and right), along with the presidents of South Korea (center left) and the International Mathematical Union (center right) <a href="https://blogs.ams.org/phdplus/2014/08/20/leveling-the-playing-fields/">(source)</a></figcaption>
 
-There were many reasons I thought this name felt appropriate: for one, there are very few craters on the Moon named after women, and even fewer after women of colour---only three others previously, as far as I could tell.<span class="ref"><span class="refnum">[4]</span><span class="refbody">Those being [Kalpana Chawla](https://planetarynames.wr.usgs.gov/Feature/14139), STS-87 mission specialist who tragically passed away in the Space Shuttle _Columbia_ disaster; [Annie Easley](https://planetarynames.wr.usgs.gov/Feature/15959), computer scientist and mathematician who made contributions to the design of the _Centaur_ rocket, and one of the many African American women working as "human computers" at NASA in the tail end of the Jim Crow era; and [Dorothy Vaughan](https://planetarynames.wr.usgs.gov/Feature/15862), another African American mathematician and "human computer" whose experience was chronicled in the 2016 film [_Hidden Figures_](https://www.imdb.com/title/tt4846340/)</span></span> It's also a small but striking feature, echoing Mirzakhani's diminutive stature and [dazzling intellect](https://www.cbc.ca/radio/ideas/a-legacy-of-firsts-how-an-iranian-mathematician-transcended-boundaries-1.5291599). But most importantly, by proxy, I wanted to honour another woman who profoundly shaped my life as a scientist.
+There were many reasons I thought this name felt appropriate: for one, there are very few craters on the Moon named after women, and even fewer after women of colour---only three others previously, as far as I could tell.<span class="ref"><span class="refnum">[5]</span><span class="refbody">Those being [Kalpana Chawla](https://planetarynames.wr.usgs.gov/Feature/14139), STS-87 mission specialist who tragically passed away in the Space Shuttle _Columbia_ disaster; [Annie Easley](https://planetarynames.wr.usgs.gov/Feature/15959), computer scientist and mathematician who made contributions to the design of the _Centaur_ rocket, and one of the many African American women working as "human computers" at NASA in the tail end of the Jim Crow era; and [Dorothy Vaughan](https://planetarynames.wr.usgs.gov/Feature/15862), another African American mathematician and "human computer" whose experience was chronicled in the 2016 film [_Hidden Figures_](https://www.imdb.com/title/tt4846340/)</span></span> It's also a small but striking feature, echoing Mirzakhani's diminutive stature and [dazzling intellect](https://www.cbc.ca/radio/ideas/a-legacy-of-firsts-how-an-iranian-mathematician-transcended-boundaries-1.5291599). But most importantly, by proxy, I wanted to honour another woman who profoundly shaped my life as a scientist.
 
 <br>
 <a href="{{ imgpath }}/MazroueiSara.jpg">
@@ -91,10 +93,10 @@ The most stark example of this came in 2016, when she was barred from a NASA fac
 
 
 
-In the time since I've become increasingly aware of the many more injustices being committed on our fragile, precious planet, many—like in Sara's case—simply because of where they were born. From the genocide in Gaza, to the (former) rule of terror in Syria, to the massacres in Sudan and Myanmar and Ukraine and Bangladesh, our world has been groaning under the weight of years of oppression, often as a direct consequence of actions in the West. We cannot afford (nor should we be justly allowed) to see these struggles as far-off foreign conflicts with no relation to us. Beyond their inherent 
+In the time since I've become increasingly aware of the many more injustices being committed on our fragile, precious planet, many—like in Sara's case—simply because of where they were born. From the genocide in Gaza, to the (former) rule of terror in Syria, to the massacres in Sudan and Myanmar and Ukraine and Bangladesh, our world has been groaning under the weight of years of oppression, often as a direct consequence of actions in the West. We cannot afford (nor should we be justly allowed) to see these struggles as far-off foreign conflicts with no relation to us. Beyond their inherent \_\_\_\_\_\_\_
 
 
-## 
+%## 
 
 At the end of the day, though, one might ask: does any of this really matter? Sure, symbolic gestures are nice, but do they have any material impact on the injustices we are witnessing daily occurring around the globe? 
 

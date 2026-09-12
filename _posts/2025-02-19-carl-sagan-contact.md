@@ -6,6 +6,7 @@ header:
   overlay_image: /assets/images/2025-02-19-carl-sagan-contact/Contact-film.png
   overlay_filter: 0.5  # same as adding an opacity of 0.5 to a black background
 published: false
+visible: false
 hidden: true
 related: false
 comments: true

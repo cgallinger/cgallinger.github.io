@@ -2,6 +2,8 @@
 title: "Summer Days, Driftin' Away..."
 date: 2024-08-22T08:00:00-04:00
 published: false
+visible: false
+hidden: true
 related: false
 comments: true
 categories:

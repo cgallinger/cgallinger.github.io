@@ -68,7 +68,7 @@ However, the second answer to ChatGPT's success is somehow both obvious and stup
     </tr>
     <tr>
       <td markdown="span">GPT-3</td>
-      <td markdown="span">75 billion</td>
+      <td markdown="span">175 billion</td>
       <td markdown="span">499 billion tokens consisting of CommonCrawl (570 GB), WebText, English Wikipedia, and two books corpora (Books1 and Books2).</td>
     </tr>
   </tbody>
